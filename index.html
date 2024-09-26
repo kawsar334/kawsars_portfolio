@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio </title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary_bg: "#121212",
+                        orange: '#ee8f12'
+                    },
+                    backgroundImage: {
+                        'custom-gradient': 'linear-gradient(90.21deg, #ee8f12 -5.91%, #f86300 111.58%)',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .Manrope {
+            font-family: "Manrope", sans-serif;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body class="bg-[#121212] Manrope h-auto  text-[white] darkmode">
+    <header class="bg-primary_bg darkmode" id="intro">
+        <div class="navbar bg-base-100 bg-[rgba(0,0,0,0.4)] sticky top-0 left-0 z-20">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-[black] rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#project">Portfolio</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <li><a href="https://portfolio-c34cf.firebaseapp.com/" target="_blank">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <!-- <a href="#intro" class="text-xl capitalize">Kawsar firoz</a> -->
+
+                <button class="btn " id="mode_btn">Light/dark</button>
+                <button class="btn mx-3" id="mode_btn">English</button>
+
+            </div>
+            <div class="navbar-end">
+
+
+                <button class="btn btn-ghost  btn-circle">
+                    <div class="indicator mr-4">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                        <span class="badge badge-xs badge-primary indicator-item"></span> -->
+                        <a href="https://docs.google.com/document/d/1lDcnMOuXtyzD710WU9JVJu6ZbNUPkHO2OlxsQGKs0hc/edit"
+                            target="_blank" title="View Resume"> Resume</a>
+
+
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- navbar end here -->
+        <!-- banner section start here -->
+        <section class="mt-[50px] darkmode">
+            <div class="hero bg-transparent min-h-screen">
+                <div class="hero-content flex-col-reverse lg:flex-row-reverse ">
+                    <!-- <img src="https://stupendous-raindrop-080f10.netlify.app/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg"
+                        class="max-w-sm  rounded-lg shadow-2xl bg-transparent " /> -->
+                    <!-- <img src="./assets/hero.jpg" alt="" class="max-w-sm  rounded-lg shadow-2xl bg-transparent " > -->
+                    <img src="./assets/hero1.png" alt=""
+                        class="max-w-sm rounded-lg shadow-2xl bg-transparent animated-image">
+                    <!-- <img src="https://portfolio-c34cf.firebaseapp.com/imgs/mee.png" alt="" class="max-w-sm rounded-lg shadow-2xl bg-transparent animated-image"> -->
+                    <div>
+                        <div>
+                            <h1 class="text-3xl md:text-5xl font-semibold ">Hi! I'm kawsar firoz</h1>
+                            <h1 class=" w-full md:w-[60%] text-4xl md:text-5xl font-bold text-[#ee8f12]"
+                                id="typewriter"></h1>
+                        </div>
+                        <p class="py-6 w-[90%] md:w-[70%]" data-aos="fade-up">
+                            I am a self-motivated and hard-working web developer with knowledge in React, Node,
+                            Express.js, MongoDB, JavaScript,
+                            HTML, CSS, and responsive web development. I am looking for a challenging position where I
+                            can showcase my skills and
+                            contribute to the organization's growth.
+                        </p>
+                        <div class="flex flex-col md:flex-row gap-3 w-[90%]   justify-start items-start">
+                            <a class="btn border-[none] text-2xl bg-custom-gradient text-[white]" href="#project">See my
+                                works</a>
+                            <a class="btn border-[none] text-2xl bg-custom-gradient text-[white]"
+                                href="https://docs.google.com/document/d/1lDcnMOuXtyzD710WU9JVJu6ZbNUPkHO2OlxsQGKs0hc/export?format=pdf"
+                                title="Download Resume">Download
+                                Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner section end here -->
+    </header>
+    <!-- skill -->
+    <section id="skill"
+        class="container  p-[20px] flex flex-col justify-center items-center m-auto h-max   w-full py-[100px] darkmode">
+
+        <div class="my-7">
+            <h1 class="text-4xl ">My <span class="text-orange">Skills</span></h1>
+            <p>Here is my skills to represent my Expertise</p>
+        </div>
+        <div class=" flex flex-wrap  gap-10  bg-[] w-[100%] md:w-[60%] ">
+            <!-- ************* -->
+            <div class="flex flex-wrap gap-10">
+                <!-- HTML Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-orange-500" stroke-dasharray="70, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">70%</span>
+                    <p class="absolute bottom-[-20px] capitalize">HTML</p>
+                </div>
+
+                <!-- CSS Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-blue-500" stroke-dasharray="70, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">70%</span>
+                    <p class="absolute bottom-[-20px] capitalize">CSS</p>
+                </div>
+
+                <!-- JavaScript Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-yellow-400" stroke-dasharray="70, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">70%</span>
+                    <p class="absolute bottom-[-20px] capitalize">JavaScript</p>
+                </div>
+
+                <!-- ReactJS Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-cyan-500" stroke-dasharray="80, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">80%</span>
+                    <p class="absolute bottom-[-20px] capitalize">ReactJS</p>
+                </div>
+
+                <!-- Express.js Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-green-500" stroke-dasharray="60, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">60%</span>
+                    <p class="absolute bottom-[-20px] capitalize">Express.js</p>
+                </div>
+
+                <!-- MongoDB Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-green-600" stroke-dasharray="50, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">50%</span>
+                    <p class="absolute bottom-[-20px] capitalize">MongoDB</p>
+                </div>
+
+                <!-- PHP Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-purple-500" stroke-dasharray="40, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">40%</span>
+                    <p class="absolute bottom-[-20px] capitalize">PHP</p>
+                </div>
+                <!-- Tailwind CSS Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3"
+                            stroke="currentColor" />
+                        <path class="text-teal-500" stroke-dasharray="70, 100" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">70%</span>
+                    <p class="absolute bottom-[-20px] capitalize">Tailwind</p>
+                </div>
+
+                <!-- React Native Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3"
+                            stroke="currentColor" />
+                        <path class="text-cyan-600" stroke-dasharray="50, 100" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">50%</span>
+                    <p class="absolute bottom-[-40px] right-0 capitalize bg-[]">React Native</p>
+                </div>
+
+                <!-- Laravel Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3"
+                            stroke="currentColor" />
+                        <path class="text-red-600" stroke-dasharray="50, 100" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">50%</span>
+                    <p class="absolute bottom-[-20px] capitalize">Laravel</p>
+                </div>
+
+
+            </div>
+            <!-- ********** -->
+
+            <div class="w-[90%] bg-transparent p-5 flex justify-start items-center flex-wrap gap-3 darkmode">
+                <div class="">
+                    <div class="flex justify-center items-center gap-3 flex-wrap">
+                        <button class="btn btn-sm bg-blue-500 text-white hover:bg-blue-700">Next.js</button>
+                        <button class="btn btn-sm bg-green-500 text-white hover:bg-green-700">Python</button>
+                        <button class="btn btn-sm bg-red-500 text-white hover:bg-red-700">Redux</button>
+                        <button class="btn btn-sm bg-orange-500 text-white hover:bg-orange-700">RTQ</button>
+                        <button class="btn btn-sm bg-yellow-500 text-white hover:bg-yellow-700">Context API</button>
+                        <button class="btn btn-sm bg-yellow-500 text-white hover:bg-yellow-700">jwt</button>
+
+                        <button class="btn btn-sm bg-purple-500 text-white hover:bg-purple-700 ">SQL</button>
+                        <button class="btn btn-sm bg-purple-500 text-white hover:bg-purple-700">Axios</button>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <div class="flex justify-center items-center gap-3 flex-wrap">
+                        <button class="btn btn-sm bg-gray-500 text-white hover:bg-gray-700">VS Code</button>
+                        <button class="btn btn-sm bg-green-600 text-white hover:bg-green-800">Git</button>
+                        <button class="btn btn-sm bg-blue-600 text-white hover:bg-blue-800">NPM</button>
+                        <button class="btn btn-sm bg-indigo-500 text-white hover:bg-indigo-700">Netlify</button>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <!-- skill -->
+
+
+    <!-- services -->
+    <section id="services"
+        class="container  m-auto flex flex-col justify-center items-center gap-10 py-10 darkmode w-[95%]">
+        <h1 class="text-4xl capitalize">my services</h1>
+        <div class="flex justify-center items-center gap-5 m-auto flex-wrap">
+            <div
+                class="card bg-transparent text-primary-content hover:border-[white] w-96 border-orange border-[2px]  ">
+                <div class="card-body cursor-pointer  text-[white]">
+
+                    <p class="text-5xl">&lt;/&gt;</p>
+                    <h2 class="card-title">Web Development!</h2>
+                    <p>I will make a clean, unique, and professional-looking website. My design must be responsive on
+                        all
+                        devices, pixel
+                        perfect and clean coding. I hope, I can help you to make an awesome website for your business.
+                    </p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card bg-transparent text-primary-content hover:border-[white] w-96 border-orange border-[2px] ">
+                <div class="card-body cursor-pointer  text-[white]">
+                    <i class="fa-solid fa-computer text-5xl"></i>
+                    <h2 class="card-title">Responsive Design</h2>
+                    <p>I will provide you with excellent web design services. Your website will be loaded first and it
+                        will show perfectly on
+                        every device. I believe in providing the best experience, the best designs, and the best
+                        results.</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card bg-transparent text-primary-content hover:border-[white] w-96 border-orange border-[2px]">
+                <div class="card-body cursor-pointer  text-[white]">
+                    <p class="text-5xl">$</p>
+                    <h2 class="card-title my-3">Reasonable Cost!</h2>
+                    <p>I work closely with my clients on each project to create not only an amazing design that will
+                        help the business grow but
+                        to create a long-term relationship of trust and caring.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- services end  -->
+
+
+
+    <!-- projects -->
+    <div class="bg-[#121212] text-[white] py-10 flex justify-center items-center flex-col gap-7" id="project">
+        <div>
+            <h1 class="text-4xl capitalize ">project </h1>
+            <p class="text-2xl capitalize my-4">my all projects here</p>
+        </div>
+        <div class="w-[100%] md:w-[80%] lg:w-[80%] m-auto ">
+            <div role="tablist" class="tabs tabs-lifted ">
+                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize"
+                    aria-label="Design" />
+                <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-[#121212] ">
+
+                    <div id="html_content" class="flex  flex-wrap justify-center items-center gap-5  "></div>
+
+                </div>
+
+                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize"
+                    aria-label="frontend " checked="checked" />
+                <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-[#121212] ">
+
+                    <div id="frontend_content" class="flex  flex-wrap justify-center items-center gap-5  w-full"></div>
+                </div>
+
+
+                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize"
+                    aria-label="fullstack" checked="checked" />
+                <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-[#121212]">
+
+                    <div id="fullstack_content" class="flex  flex-wrap justify-center items-center gap-5"></div>
+                </div>
+
+                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize"
+                    aria-label="React Native" />
+                <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-[#121212]">
+                    <div id="design_conainer" class="flex  flex-wrap justify-center items-center gap-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- projects -->
+    <!-- about me -->
+    <div class="w-full  py-10 bg-primary_bg">
+        <div class="container mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold">About Me</h2>
+                <p class="text-lg text-gray-600">A brief introduction about myself</p>
+            </div>
+
+            <div class="flex justify-center items-center flex-wrap gap-8">
+                <!-- Card 1 -->
+                <div class="card w-80 bg-white shadow-lg rounded-lg p-6">
+                    <div class="flex justify-center mb-4">
+                        <!-- <img src="https://via.placeholder.com/100" alt="Avatar"
+                            class="rounded-full w-24 h-24 object-cover shadow-md"> -->
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center mb-2 text-[black]">Frontend Developer</h3>
+                    <p class="text-gray-600 text-center">
+                        I specialize in creating beautiful and functional web interfaces using React.js, HTML, CSS, and
+                        JavaScript.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card w-80 bg-white shadow-lg rounded-lg p-6">
+                    <div class="flex justify-center mb-4">
+                        <!-- <img src="https://via.placeholder.com/100" alt="Avatar"
+                            class="rounded-full w-24 h-24 object-cover shadow-md"> -->
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center mb-2 text-[black]">Full-Stack Developer</h3>
+                    <p class="text-gray-600 text-center">
+                        Skilled in the MERN stack (MongoDB, Express.js, React.js, Node.js) and building complete web
+                        applications.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card w-80 bg-white shadow-lg rounded-lg p-6">
+                    <div class="flex justify-center mb-4">
+                        <!-- <img src="https://via.placeholder.com/100" alt="Avatar"
+                            class="rounded-full w-24 h-24 object-cover shadow-md"> -->
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center mb-2 text-[black]">UI/UX Designer</h3>
+                    <p class="text-gray-600 text-center">
+                        Passionate about creating intuitive user experiences with a focus on design principles and
+                        usability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about me -->
+    <!-- testimonial -->
+    <section class="bg-transparent py-6 bg-primary_bg darkmode ">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 mb-4">"Kawsar Firoz is an exceptional full-stack developer. His expertise in
+                        React.js and the MERN stack is evident in every project he delivers."</p>
+                    <!-- <h3 class="text-lg font-semibold">Client Name</h3> -->
+                    <!-- <p class="text-sm text-gray-500">Position, Company</p> -->
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 mb-4">"Working with Kawsar was a pleasure! His attention to detail and
+                        creative
+                        solutions truly set him apart."</p>
+                    <!-- <h3 class="text-lg font-semibold">Client Name</h3> -->
+                    <!-- <p class="text-sm text-gray-500">Position, Company</p> -->
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+        </div>
+    </section>
+    <!-- testimonial -->
+
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="hero bg-[#191e24] min-h-screen darkmode">
+            <div class="hero-content flex-col lg:flex-row  w-full md:w-[80%]">
+                <div>
+                    <div class=" border mb-[20px] px-3 py-1 flex justify-start rounded items-center gap-3 ">
+                        <span><i class="fas fa-envelope"></i></span> <a href="mailto:kawsarfiroz11@gmail.com">kawsarfiroz11@gmail.com</a>
+
+
+                    </div>
+                    <div class=" border mb-[20px] px-3 py-1 flex justify-start rounded items-center  gap-3">
+
+                        <i class="fas fa-phone"></i>
+                        <a href="https://wa.me/966509325731">+966509325731</a>
+
+                    </div>
+                  
+                    <div class="border mb-[20px] px-3 py-1 flex justify-start rounded items-center gap-3">
+                        <a href="https://www.linkedin.com/in/kawsar-firoz-a140b9237/" target="_blank">
+                            <i class="fab fa-linkedin text-3xl rounded-[30px] cursor-pointer"></i>
+                        </a>
+                    
+                        <a href="https://www.facebook.com/people/Kawsar-Firoz/pfbid02uZGLYoyYZbJx6HSc7QsFwgY8QLq9BB1xzyqtns8G2A6UuBS7Fca35Mw9sWGUfcwTl/" target="_blank">
+                            <i class="fab fa-facebook text-3xl rounded-[30px] cursor-pointer"></i>
+                        </a>
+                    
+                        <a href="https://github.com/kawsar334" target="_blank">
+                            <i class="fab fa-github text-3xl rounded-[30px] cursor-pointer"></i>
+                        </a>
+                    
+                        <a href="https://wa.me/966509325731" target="_blank">
+                            <i class="fab fa-whatsapp text-3xl rounded-[30px]"></i>
+                        </a>
+                    
+                        <a href="https://portfolio-c34cf.firebaseapp.com/" target="_blank">
+                            <i class="fas fa-globe text-3xl rounded-[30px] cursor-pointer"></i> <!-- Portfolio 1 -->
+                        </a>
+                    
+                      
+                    </div>
+
+                </div>
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+                    <form class="card-body">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Your fullName </span>
+                            </label>
+                            <input type="text" placeholder="Your Name" class="input input-bordered" required />
+
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Email</span>
+                            </label>
+                            <input type="email" placeholder="email" class="input input-bordered" required />
+                        </div>
+
+                        <textarea class="textarea textarea-bordered" placeholder="Your Message"></textarea>
+                        <div class="form-control mt-6">
+                            <button class="btn bg-[#191e24] text-[white]">Send</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- contact -->
+
+    <!-- footer -->
+    <footer class="w-full h-max bg-[#2b2929] px-2  py-7 darkmode">
+        <div
+            class="flex flex-col  justify-start items-start gap-5 flex-wrap  md:flex-row md:justify-center  md:gap-10 border-b w-[80%] m-auto p-5">
+            <div class="flex justify-center items-center  ">
+                <ul>
+                    <li class="my-3"><a href="#intro" class="text-2xl ">Home </a></li>
+                    <li class="my-3"><a href="#services" class="text-2xl ">services </a></li>
+                    <li class="my-3"><a href="./links/projects.html" class="text-2xl ">project </a></li>
+                    <li class="my-3"><a href="#contact" class="text-2xl ">contact </a></li>
+                    <li class="my-3"><a href="#about" class="text-2xl ">about </a></li>
+                    <li class="my-3">
+                        <a href="tel:+966509325731" class="text-2xl">+966509325731</a>
+                    </li>
+                    <li><a href="https://docs.google.com/document/d/1lDcnMOuXtyzD710WU9JVJu6ZbNUPkHO2OlxsQGKs0hc/export?format=pdf"
+                            title="Download Resume" download>Download cv</a>
+                    </li>
+                    <li class="my-3"><a href="https://portfolio-c34cf.firebaseapp.com/" target="_blank"
+                            class="text-[14px] text-[#121244] border rounded py-2 px-3 hover:bg-[white] hover:text-[black]">Multiple language portfolio </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="flex gap-5 justify-center items-center   my-auto">
+                <a href="https://wa.me/+966509325731" target="_blank">
+                    <i class="fab fa-whatsapp text-3xl rounded-[30px]"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-twitter text-3xl rounded-[30px] cursor-pointer "></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram text-3xl rounded-[30px] cursor-pointer "></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kawsar-firoz-a140b9237/" target="_blank">
+                    <i class="fab fa-linkedin text-3xl rounded-[30px] cursor-pointer "></i>
+                </a>
+
+
+                <a href="https://www.facebook.com/people/Kawsar-Firoz/pfbid02uZGLYoyYZbJx6HSc7QsFwgY8QLq9BB1xzyqtns8G2A6UuBS7Fca35Mw9sWGUfcwTl/"
+                    target="_blank">
+                    <i class="fab fa-facebook text-3xl rounded-[30px] cursor-pointer "></i>
+                </a>
+
+                <a href="https://github.com/kawsar334" target="_blank">
+                    <i class="fab fa-github text-3xl rounded-[30px] cursor-pointer "></i>
+                </a>
+            </div>
+
+        </div>
+
+        <p class="text-[16px] py-3 text-center mt-4 e">© <a href="https://portfolio-c34cf.firebaseapp.com/"
+                class="" target="_blank">kawsar firoz</a>. All right reserved</p>
+    </footer>
+    <!-- footer -->
+
+    <script>
+        const words = ["Frontend web developer!", "React js ,!", "Html, css, and vannilla js", "Context Api , redux, react-router-dom", "Node.js,express.js,", "mongodb,"];
+        let i = 0;
+        let j = 0;
+        let currentWord = "";
+        let isDeleting = false;
+        function type() {
+            currentWord = words[i];
+            if (isDeleting) {
+                document.getElementById("typewriter").textContent = currentWord.substring(0, j - 1);
+                j--;
+                if (j == 0) {
+                    isDeleting = false;
+                    i++;
+                    if (i == words.length) {
+                        i = 0;
+                    }
+                }
+            } else {
+                document.getElementById("typewriter").textContent = currentWord.substring(0, j + 1);
+                j++;
+                if (j == currentWord.length) {
+                    isDeleting = true;
+                }
+            }
+            setTimeout(type, 100);
+        }
+        type();
+        AOS.init();
+    </script>
+    <!-- <script  type="module" src="./js/api.js"></script> -->
+    <script type="module" src="js/items.js"></script>
+    <script src="./js/darkmod.js"></script>
+
+</body>
+
+</html>
